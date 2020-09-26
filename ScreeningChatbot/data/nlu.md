@@ -30,3 +30,8 @@
 - depression-anxiety
 - I want to take depression-anxiety screening test
 - Depression
+
+## intent:trauma
+- trauma
+- I want to take trauma screening test
+- Traumatic event

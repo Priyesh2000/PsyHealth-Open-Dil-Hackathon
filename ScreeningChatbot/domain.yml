@@ -5,6 +5,7 @@ intents:
   - several_days
   - everyday
   - depression
+  - trauma
 
 entities:
   - option_0
@@ -24,6 +25,16 @@ entities:
   - question_10
   - question_11
   - question_12
+  - question_13
+  - question_14
+  - question_15
+  - question_16
+  - question_17
+  - question_18
+  - question_19
+  - question_20
+  - question_21
+  - question_22
 
 slots:
   #depression-Anxiety
@@ -53,6 +64,28 @@ slots:
     type: unfeaturized
   question_12:
     type: unfeaturized
+  # Trauma
+  question_13:
+    type: unfeaturized
+  question_14:
+    type: unfeaturized
+  question_15:
+    type: unfeaturized
+  question_16:
+    type: unfeaturized
+  question_17:
+    type: unfeaturized
+  question_18:
+    type: unfeaturized
+  question_19:
+    type: unfeaturized
+  question_20:
+    type: unfeaturized  
+  question_21:
+    type: unfeaturized
+  question_22:
+    type: unfeaturized
+
 
 responses:
   utter_choice:
@@ -320,8 +353,121 @@ responses:
           payload: "/everyday{\"question_12\": \"3\"}"
           title: Nearly every day
 
+# Trauma
+  utter_ask_question_13:
+      -
+        text: "Upsetting thoughts or memories about the event that have come into your mind against your will"
+        buttons:
+          -
+            payload: "/notatall{\"question_13\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_13\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_14:
+      -
+        text: "Upsetting dreams about the event"
+        buttons:
+          -
+            payload: "/notatall{\"question_14\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_14\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_15:
+      -
+        text: "Acting or feeling as though the event were happening again"
+        buttons:
+          -
+            payload: "/notatall{\"question_15\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_15\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_16:
+      -
+        text: "Feeling upset by reminders of the event"
+        buttons:
+          -
+            payload: "/notatall{\"question_16\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_16\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_17:
+      -
+        text: "Bodily reactions (such as fast heartbeat, stomach churning)"
+        buttons:
+          -
+            payload: "/notatall{\"question_17\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_17\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_18:
+      -
+        text: "Difficulty falling asleep or staying awake"
+        buttons:
+          -
+            payload: "/notatall{\"question_18\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_18\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_19:
+      -
+        text: "Irritability or outbusrts of anger"
+        buttons:
+          -
+            payload: "/notatall{\"question_19\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_19\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_20:
+      -
+        text: "Difficulty concentrating"
+        buttons:
+          -
+            payload: "/notatall{\"question_20\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_20\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_21:
+      -
+        text: "Heightened awareness of potential dangers to yourself and others"
+        buttons:
+          -
+            payload: "/notatall{\"question_21\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_21\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_22:
+    -
+      text: "Feeling jumpy or being startled by something unexpected"
+      buttons:
+        -
+          payload: "/notatall{\"question_22\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_22\": \"1\"}"
+          title: "Yes"
+
 forms:
   - depression_form
+  - trauma_form
 
 
 session_config:
