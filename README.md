@@ -1,7 +1,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]](https://github.com/AdarshAgrwal/PsyHealth/issues)
+[![Issues][issues-shield]](https://github.com/aadimangla/PsyHealth/issues)
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -26,7 +26,7 @@
     ·
     <a href="">Report Bug</a>
     · -->
-    <a href="https://github.com/AdarshAgrwal/PsyHealth/issues">Request Feature</a>
+    <a href="https://github.com/aadimangla/PsyHealth/issues">Request Feature</a>
   </p>
 </p>
 
@@ -95,7 +95,7 @@ Why this project is needed
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/AdarshAgrwal/PsyHealth/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/aadimangla/PsyHealth/issues) for a list of proposed features (and known issues).
 
 ---
 
@@ -140,16 +140,16 @@ See the [open issues](https://github.com/AdarshAgrwal/PsyHealth/issues) for a li
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/AdarshAgrwal/PsyHealth.svg?style=flat-square
-[contributors-url]: https://github.com/AdarshAgrwal/PsyHealth/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/AdarshAgrwal/PsyHealth.svg?style=flat-square
-[forks-url]: https://github.com/AdarshAgrwal/PsyHealth/network/members
-[stars-shield]: https://img.shields.io/github/stars/AdarshAgrwal/PsyHealth.svg?style=flat-square
-[stars-url]: https://github.com/AdarshAgrwal/PsyHealth/stargazers
-[issues-shield]: https://img.shields.io/github/issues/AdarshAgrwal/PsyHealth.svg?style=flat-square
-[issues-url]: https://github.com/AdarshAgrwal/PsyHealth/issues
-[license-shield]: https://img.shields.io/github/license/AdarshAgrwal/PsyHealth.svg?style=flat-square
-[license-url]: https://github.com/AdarshAgrwal/PsyHealth/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/aadimangla/PsyHealth.svg?style=flat-square
+[contributors-url]: https://github.com/aadimangla/PsyHealth/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/aadimangla/PsyHealth.svg?style=flat-square
+[forks-url]: https://github.com/aadimangla/PsyHealth/network/members
+[stars-shield]: https://img.shields.io/github/stars/aadimangla/PsyHealth.svg?style=flat-square
+[stars-url]: https://github.com/aadimangla/PsyHealth/stargazers
+[issues-shield]: https://img.shields.io/github/issues/aadimangla/PsyHealth.svg?style=flat-square
+[issues-url]: https://github.com/aadimangla/PsyHealth/issues
+[license-shield]: https://img.shields.io/github/license/aadimangla/PsyHealth.svg?style=flat-square
+[license-url]: https://github.com/aadimangla/PsyHealth/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/aadimangla
 [product-screenshot]: images/screenshot.png
