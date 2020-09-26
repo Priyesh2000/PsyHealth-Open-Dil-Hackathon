@@ -6,51 +6,27 @@
 - good evening
 - hey there
 
-## intent:goodbye
-- bye
-- goodbye
-- see you around
-- see you later
+## intent:notatall
+- [0](option_0)
+- [not at all](option_0)
+- [Not At all](option_0)
 
-## intent:affirm
-- yes
-- indeed
-- of course
-- that sounds good
-- correct
+## intent:several_days
+- [1](option_1)
+- [Several Days](option_1)
+- [several](option_1)
 
-## intent:deny
-- no
-- never
-- I don't think so
-- don't like that
-- no way
-- not really
+## intent:morethanhalf
+- [2](option_2)
+- [more than half](option_2)
+- [more](option_2)
 
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
+## intent:everyday
+- [3](option_3)
+- [every day](option_3)
+- [every](option_3)
 
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
-
-## intent:bot_challenge
-- are you a bot?
-- are you a human?
-- am I talking to a bot?
-- am I talking to a human?
+## intent:depression
+- depression-anxiety
+- I want to take depression-anxiety screening test
+- Depression

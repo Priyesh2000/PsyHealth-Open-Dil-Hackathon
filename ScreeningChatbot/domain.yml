@@ -1,31 +1,328 @@
 intents:
   - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - notatall
+  - morethanhalf
+  - several_days
+  - everyday
+  - depression
+
+entities:
+  - option_0
+  - option_1
+  - option_2
+  - option_3
+  - question_0
+  - question_1
+  - question_2
+  - question_3
+  - question_4
+  - question_5
+  - question_6
+  - question_7
+  - question_8
+  - question_9
+  - question_10
+  - question_11
+  - question_12
+
+slots:
+  #depression-Anxiety
+  question_0:
+    type: unfeaturized
+  question_1:
+    type: unfeaturized
+  question_2:
+    type: unfeaturized
+  question_3:
+    type: unfeaturized
+  question_4:
+    type: unfeaturized
+  question_5:
+    type: unfeaturized
+  question_6:
+    type: unfeaturized
+  question_7:
+    type: unfeaturized
+  question_8:
+    type: unfeaturized
+  question_9:
+    type: unfeaturized
+  question_10:
+    type: unfeaturized
+  question_11:
+    type: unfeaturized
+  question_12:
+    type: unfeaturized
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_choice:
+    - text: "Hey! How can I help you?"
+      buttons:
+      - title: Depression-Anxiety
+        payload: '/depression'
+      - title: Trauma
+        payload: '/trauma'
+      - title: Drugs
+        payload: '/drugs'
+      - title: Obsessive Compulsive Disorder(OCD)
+        payload: '/ocd'
+      - title: Eating Disorders
+        payload: '/eating-disorders'
+      - title: Sleeping Disorders
+        payload: '/sleep-disorders'
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+# Depression-Anxiety
+  utter_ask_question_0:
+    -
+      text: "Little interest or pleasure in doing things"
+      buttons:
+        -
+          payload: "/notatall{\"question_0\": \"0\"}"
+          title: Not At All
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+        -
+          payload: "/several_days{\"question_0\": \"1\"}"
+          title: Several Days
 
-  utter_happy:
-  - text: "Great, carry on!"
+        -
+          payload: "/morethanhalf{\"question_0\": \"2\"}"
+          title: More than half of the Days
 
-  utter_goodbye:
-  - text: "Bye"
+        -
+          payload: "/everyday{\"question_0\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_1:
+    -
+      text: "Feeling down, depressed, or hopeless"
+      buttons:
+        -
+          payload: "/notatall{\"question_1\": \"0\"}"
+          title: Not At All
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+        -
+          payload: "/several_days{\"question_1\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_1\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_1\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_2:
+    -
+      text: "Trouble falling or staying asleep, or sleeping too much"
+      buttons:
+        -
+          payload: "/notatall{\"question_2\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_2\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_2\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_2\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_3:
+    -
+      text: "Feeling tired or having little energy"
+      buttons:
+        -
+          payload: "/notatall{\"question_3\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_3\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_3\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_3\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_4:
+    -
+      text: "Poor appetite or over eating"
+      buttons:
+        -
+          payload: "/notatall{\"question_4\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_4\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_4\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_4\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_5:
+    -
+      text: "Feeling bad about yourself - or that you are a failure or have let yourself or your family down"
+      buttons:
+        -
+          payload: "/notatall{\"question_5\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_5\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_5\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_5\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_6:
+    -
+      text: "Trouble concentrating on things such as reading the newspaper or watching television"
+      buttons:
+        -
+          payload: "/notatall{\"question_6\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_6\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_6\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_6\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_7:
+    -
+      text: "Moving or speaking so slowly that other people could have noticed? or the oposite - being so fidgety or restless that you have been moving around a lot more than ususal"
+      buttons:
+        -
+          payload: "/notatall{\"question_7\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_7\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_7\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_7\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_8:
+    -
+      text: "Thoughts that you would be better off dead or of hurting yourself in some way"
+      buttons:
+        -
+          payload: "/notatall{\"question_8\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_8\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_8\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_8\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_9:
+    -
+      text: "Do you experience excessive worry ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_9\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_9\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_9\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_9\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_10:
+    -
+      text: "Is your worry excessive in intensity, frequency, or amount of distress it causes?"
+      buttons:
+        -
+          payload: "/notatall{\"question_10\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_10\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_10\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_10\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_11:
+    -
+      text: "Do you find it difficult to control the worry(or stopped worrying) once it starts?"
+      buttons:
+        -
+          payload: "/notatall{\"question_11\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_11\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_11\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_11\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_12:
+    -
+      text: "Do you worry excessively or uncontrollably about mino things such as being late for an appointment minor repairs, homework etc. ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_12\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_12\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_12\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_12\": \"3\"}"
+          title: Nearly every day
+
+forms:
+  - depression_form
+
 
 session_config:
   session_expiration_time: 60
