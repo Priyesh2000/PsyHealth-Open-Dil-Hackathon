@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "psyhealth-c07b6",
+  "private_key_id": "5ac79dda0435f734e7621e524800b1add70a2cf8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGuqZWy14oWZic\noZGK+iOZ2a6Rue+UdohslipBurFYiqr0CNhaDfy7jqBS/WF86g7PafU8n8MYDULp\n+fHyMtn5t5mN0DCrdd4XXX8aigyk9+rWe2HOhKEzOpw3c+fddKT9gh8hI2sbFu3p\nVGtvMfKEAhvhzv4Uq0kPOQn6MoSoCgLgbNV61W1KX6rmuPYMc1pFtA6ydsp8dgYy\n84aRUHPoXgHhoOVFMXhX4WWkBTEUr46sS+l582NJUwcOq1iMAZVKqwgm2BI83oTh\n9Atmyi/xAuI8mKDRmTyfamqBabXP1xt6PhOMp0JXhbDrlfuDjIA20ZoLMMJCzePz\n16v7xNaJAgMBAAECggEACl9SY6dVSiynyLN6IdNw3KY+J7PMhTNmmkKzZx9A0GR0\ncpMSz8ISvETzQ0Gfi/u5CCrGNpxtr1ywO5jksuwXVzxPX6J+vjd2fw7nNzhk9PTn\npSHNdtz45b0CZRzy/JEKmrZNVgpzAnf0G1ouCiC32rUz3vMeoDxZO0BfFlfHd4m7\nWkCxnepWkCMFh+mKhvy06C6UhGuUkJfLcah+YZFbn/P+SJ3NHfeqsLeocc3a6i5v\nO7mQtDglexjBWzT3xiB/5ySSP45B5/Skjgx+l1l0n4etAFfpXiFQopt7tBTzVDYr\njKiF2nGJP4zF5xpDKaYYGxCME3hcrnKFh/gYo9k5vQKBgQD6sERPwlEJZgs3kbOk\nvzaNauU97VdBnlWugW06j6VdxDre4CmtRJC1cWra8uOb8FstM7Knep9we+unf3Je\nikXYhZPzeRsWK3P7S12L2V/hWDPTQ/KtMokhT0CdwxL6rDTxOehAHuAQjqkZ4a9i\nL5/B288pXui2fBOUebSMYfhZxwKBgQDK8I4ixAfwc7nLcIMIMA/jhlnkWSpq50o0\npisfgGxLtCyb25My/Y+LLNExDt6AYN1Sty438KAdIQcvIBrVCxkPvC22mC0bNzrA\nOuOvmMmcdlRuAKXS1odUmhyqGEsR7WGrlr2qnP0HKfVX5b2JVWMsw3fax+E7x0Qy\n0kCnpnjNLwKBgCIFVd/1IQZDgPYzocuT35VlkmLLGPJgyIP8MJSn9es5vDuO9Fj9\nWx4knDnGiLka72S9BVvROl4LkzmSBDVsUnpF9oQuRUzG7OCHo9Rc1bRBQhdDu2Vh\n3FZW6Q//701xnWW3VBuPlRzqH2zRwflzOR0X9Y9JwA8z23xk3+nFSez1AoGAUa5k\n5yVTtLo/i9yrQL5nhsJqp/gjlIenXG2Nac58yDOqyMimBJ3+CpxtTnuXnsBeFI7a\nMXXOXCsRAyy+4ATpf2XUWGwDq7KdGQYa4nBypWETNntYQvZJ3glxhBznCj4rU68G\nhAdP6HRA5bH4ibAujLPYJ9zPkQnxLytlDpV4hc0CgYEApdyoTUfwCrHMtmPEAiwF\nq66Mbx6N1iRC1R6JBznKLF/d545eg3NkraNDf6iDcGIQBqH0ucgncy77+N9o+o92\nNQ+dq5tVVQyfxre/favgDqdkta4DtqcSLHwPFBlaKYN+EN+uu0a7vjFXL1a5oYLR\nEN5Ok9Mico0/TBwrb2+oie4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-m82ah@psyhealth-c07b6.iam.gserviceaccount.com",
+  "client_id": "107895454325021527855",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-m82ah%40psyhealth-c07b6.iam.gserviceaccount.com"
+}
