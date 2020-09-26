@@ -1,0 +1,16 @@
+{
+  "name": "psyhealth",
+  "version": "1.0.0",
+  "description": "[![Contributors][contributors-shield]][contributors-url]\r [![Forks][forks-shield]][forks-url]\r [![Stargazers][stars-shield]][stars-url]\r [![Issues][issues-shield]](https://github.com/aadimangla/PsyHealth/issues)\r [![MIT License][license-shield]][license-url]\r [![LinkedIn][linkedin-shield]][linkedin-url]",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
