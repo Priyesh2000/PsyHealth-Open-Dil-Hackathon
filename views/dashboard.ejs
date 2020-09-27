@@ -1,0 +1,52 @@
+<%- include("Partials/header.ejs")  %> 
+
+<div class="dashboard">
+    <div class="dashboard_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 dashboard_img dashboard_content">
+                    <div>
+                        <img src="img/Dashboard Image.svg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-md-6 dashboard_content d-flex align-items-center justify-content-center">
+                    <div>
+                        <h1>Welcome</h1>
+                        <h3><%= name %> </h3>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>I AM A THERAPIST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row detail_table">
+            <h1>APPOINTMENTS</h1> 
+            <table class="table table-bordered">
+                <thead>
+                    <td>Patient Name</td>
+                    <td>Email-ID</td>
+                    <td>Number</td>
+                    <td>Ailment</td>
+                </thead>
+                <% for (var i =0 ; i < keys.length ;i++) { %> 
+                    <% var key = keys[i] %> 
+                    <% if (name == data[key].patientDoctor){%>
+                     <tr>
+                         <td><%= data[key].patientName  %></td>
+                         <td><%= data[key].patientEmail %> </td>
+                         <td><%= data[key].patientNumber %> </td>
+                         <td style="overflow: scroll;"><%= data[key].patientAilment %> </td>
+                     </tr> 
+                     <% } %>
+                <% } %> 
+            </table>
+        </div>
+    </div>
+</div>
+
+<%- include("Partials/footer.ejs")  %> 
