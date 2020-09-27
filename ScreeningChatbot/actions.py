@@ -206,6 +206,78 @@ class DrugForm(FormAction):
             dispatcher.utter_message(message)
         return [AllSlotsReset()]
 
+class OCDForm(FormAction):
+
+
+    def name(self):
+         return "OCD_form"
+    @staticmethod
+    def required_slots(tracker):
+        return [
+            "question_51",
+            "question_52",
+            "question_53",
+            "question_54",
+            "question_55",
+            "question_56",
+            "question_57",
+            "question_58",
+            "question_59",
+            "question_60",
+            "question_61",
+            "question_62",
+            "question_63",
+            "question_64",
+            "question_65",
+            "question_66",
+            "question_67",
+            "question_68",
+            "question_69",
+            "question_70"      
+            ]
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        
+        question_51  = int(tracker.get_slot("question_51"))
+        question_52 =  int(tracker.get_slot("question_52"))
+        question_53  = int(tracker.get_slot("question_53"))
+        question_54  = int(tracker.get_slot("question_54"))
+        question_55  = int(tracker.get_slot("question_55"))
+        question_56  = int(tracker.get_slot("question_56"))
+        question_57  = int(tracker.get_slot("question_57"))
+        question_58  = int(tracker.get_slot("question_58"))
+        question_59  = int(tracker.get_slot("question_59"))
+        question_60  = int(tracker.get_slot("question_60"))
+        question_61  = int(tracker.get_slot("question_61"))
+        question_62  = int(tracker.get_slot("question_62"))
+        question_63  = int(tracker.get_slot("question_63"))
+        question_64  = int(tracker.get_slot("question_64"))
+        question_65  = int(tracker.get_slot("question_65"))
+        question_66  = int(tracker.get_slot("question_66"))
+        question_67  = int(tracker.get_slot("question_67"))
+        question_68  = int(tracker.get_slot("question_68"))
+        question_69  = int(tracker.get_slot("question_69"))
+        question_70  = int(tracker.get_slot("question_70"))
+
+        
+        sum8 = question_51+ question_52+ question_53+ question_54+ question_55+ question_56+ question_57+ question_58+ question_59+ question_60+ question_61+ question_62+ question_63+ question_64+ question_65+ question_66+ question_67+ question_68+ question_69+ question_70
+        sum8 = int(sum8)
+        if(sum8 <= 5):
+            message = "You do not possess traits of obsessive compulsive disorder. Although if you continue facing the problems kindly visit a doctor.  Caution: These results are not to be trusted fully."
+            dispatcher.utter_message(message)
+        elif(sum8 >= 6 and sum8 < 10):
+            message = "You do possess moderate traits of obsessive compulsive disorder. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully."
+            dispatcher.utter_message(message)
+        elif(sum8 >= 10):
+            message = "You possess high traits of obsessive compulsive disorder. You should see a psychologist or counsellor on immediate basis.  Caution: These results are not to be trusted fully."
+            dispatcher.utter_message(message)
+        return [AllSlotsReset()]
+
 class EatForm(FormAction):
 
 
@@ -386,4 +458,6 @@ class SleepForm(FormAction):
 
 
         return [AllSlotsReset()]
+
+
 

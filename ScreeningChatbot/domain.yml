@@ -5,10 +5,13 @@ intents:
   - several_days
   - everyday
   - depression
-  - trauma
   - drugs
   - sleep-disorders
   - eating-disorders
+  - trauma
+  - ocd
+
+
 
 entities:
   - option_0
@@ -66,7 +69,27 @@ entities:
   - question_48
   - question_49
   - question_50
-  question_71
+  - question_51
+  - question_52
+  - question_53
+  - question_54
+  - question_55
+  - question_56
+  - question_57
+  - question_58
+  - question_59
+  - question_60
+  - question_61
+  - question_62
+  - question_63
+  - question_64
+  - question_65
+  - question_66
+  - question_67
+  - question_68
+  - question_69
+  - question_70
+  - question_71
   - question_72
   - question_73
   - question_74
@@ -116,6 +139,14 @@ entities:
   - question_118
   - question_119
 
+ 
+
+  
+ 
+
+
+
+
 slots:
   #depression-Anxiety
   question_0:
@@ -144,7 +175,7 @@ slots:
     type: unfeaturized
   question_12:
     type: unfeaturized
-  # Trauma
+    # Trauma
   question_13:
     type: unfeaturized
   question_14:
@@ -163,9 +194,9 @@ slots:
     type: unfeaturized  
   question_21:
     type: unfeaturized
+    # Drugs
   question_22:
     type: unfeaturized
-    # Drugs
   question_23:
     type: unfeaturized
   question_24:
@@ -222,6 +253,47 @@ slots:
     type: unfeaturized
   question_50:
     type: unfeaturized
+    #OCD
+  question_51:
+    type: unfeaturized
+  question_52:
+    type: unfeaturized
+  question_53:
+    type: unfeaturized
+  question_54:
+    type: unfeaturized
+  question_55:
+    type: unfeaturized
+  question_56:
+    type: unfeaturized
+  question_57:
+    type: unfeaturized
+  question_58:
+    type: unfeaturized
+  question_59:
+    type: unfeaturized
+  question_60:
+    type: unfeaturized
+  question_61:
+    type: unfeaturized
+  question_62:
+    type: unfeaturized
+  question_63:
+    type: unfeaturized
+  question_64:
+    type: unfeaturized  
+  question_65:
+    type: unfeaturized
+  question_66:
+    type: unfeaturized
+  question_67:
+    type: unfeaturized
+  question_68:
+    type: unfeaturized
+  question_69:
+    type: unfeaturized
+  question_70:
+    type: unfeaturized    
     # Eating Disorder
   question_71:
     type: unfeaturized
@@ -322,6 +394,14 @@ slots:
     type: unfeaturized
   question_119:
     type: unfeaturized
+  
+  
+
+
+
+
+
+
 
 responses:
   utter_choice:
@@ -1011,6 +1091,228 @@ responses:
             payload: "/several_days{\"question_50\": \"1\"}"
             title: "Yes"
 
+# OCD
+  utter_ask_question_51:
+    -
+      text: "Cocenrned with contamination or acquiring a serious illness such as AIDS?"
+      buttons:
+        -
+          payload: "/notatall{\"question_51\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_51\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_52:
+    -
+      text: "Overconcern with keeping objects in perfect order or arranged exactly?"
+      buttons:
+        -
+          payload: "/notatall{\"question_52\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_52\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_53:
+    -
+      text: "Are you bothered by images of death or other horrible events?"
+      buttons:
+        -
+          payload: "/notatall{\"question_53\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_53\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_54:
+    -
+      text: "Are you bothered by personally unacceptable religous or sexual thoughts ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_54\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_54\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_55:
+    -
+      text: "Do you worry a lot about fire,burglary,or flooding the house?"
+      buttons:
+        -
+          payload: "/notatall{\"question_55\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_55\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_56:
+    -
+      text: "Do you worry a lot about accidentally hitting a pedestrain with your car or letting your car roll down the hill?"
+      buttons:
+        -
+          payload: "/notatall{\"question_56\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_56\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_57:
+    -
+      text: "Do you worry a lot about spreading an illness(such as giving someone flu)?"
+      buttons:
+        -
+          payload: "/notatall{\"question_57\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_57\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_58:
+    -
+      text: "Do you worry a lot about losing something valuable?"
+      buttons:
+        -
+          payload: "/notatall{\"question_58\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_58\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_59:
+    -
+      text: "Do you worry a lot about harm comming to a loved one because you weren't careful enough?"
+      buttons:
+        -
+          payload: "/notatall{\"question_59\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_59\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_60:
+    -
+      text: "Have you ever worried about acting on an unwanted senseless urge or impulse, such as physically harming a loved one, pushing a stranger in front of a bus,steering your car into incoming traffic; inappropiate sexual contact; or poisoning dinner guests ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_60\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_60\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_61:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as excessive or ritualized washing cleaning or grooming ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_61\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_61\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_62:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as checking light switches,water faucets,the stove ,door locks, or emergency brakes?"
+      buttons:
+        -
+          payload: "/notatall{\"question_62\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_62\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_63:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as counting; arranging; evening-up behaviour?"
+      buttons:
+        -
+          payload: "/notatall{\"question_63\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_63\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_64:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as colllecting useless objects or inspecting garbage before it is thrown out ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_64\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_64\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_65:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as repeating routine actions until it just feels right ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_65\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_65\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_66:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as need to touch objects or people?"
+      buttons:
+        -
+          payload: "/notatall{\"question_66\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_66\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_67:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as unnecessary re-reading , re-writing beofre sending mails?"
+      buttons:
+        -
+          payload: "/notatall{\"question_67\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_67\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_68:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as examing your body for signs of weakness?"
+      buttons:
+        -
+          payload: "/notatall{\"question_68\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_68\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_69:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as avoiding colours, numbers or names that are associated with dreaded events or unpleasant thoughts ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_69\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_69\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_70:
+    -
+      text: "Have you ever felt driven to perform certain acts over an over again, such as needing to confess or repeatedly asking for reassurance that you said or did something coorectly ? "
+      buttons:
+        -
+          payload: "/notatall{\"question_70\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_70\": \"1\"}"
+          title: "Yes"
+
 # Eating disorders
   utter_ask_question_71:
     -
@@ -1647,13 +1949,14 @@ responses:
             title: "Yes"
   
 
+
 forms:
   - depression_form
   - trauma_form
   - drug_form
   - sleep_form
+  - OCD_form
   - eat_form
-
 
 session_config:
   session_expiration_time: 60

@@ -50,3 +50,8 @@
 - sleep disorders
 - I want to take sleep disorders screening test
 - Sleeping Disorders
+
+## intent:ocd
+- Obsessive Compulsive Disorder
+- I want to take OCD screening test
+- OCD
