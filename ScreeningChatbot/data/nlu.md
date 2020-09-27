@@ -40,3 +40,13 @@
 - drugs
 - I want to take drugs screening test
 - Drug addiction
+
+## intent:eating-disorders
+- Eating Disorder
+- I want to take eating disorder screening test
+- Obesity
+
+## intent:sleep-disorders
+- sleep disorders
+- I want to take sleep disorders screening test
+- Sleeping Disorders

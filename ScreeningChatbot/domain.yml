@@ -7,6 +7,8 @@ intents:
   - depression
   - trauma
   - drugs
+  - sleep-disorders
+  - eating-disorders
 
 entities:
   - option_0
@@ -64,6 +66,55 @@ entities:
   - question_48
   - question_49
   - question_50
+  question_71
+  - question_72
+  - question_73
+  - question_74
+  - question_75
+  - question_76
+  - question_77
+  - question_78
+  - question_79
+  - question_80
+  - question_81
+  - question_82
+  - question_83
+  - question_84
+  - question_85
+  - question_86
+  - question_87
+  - question_88
+  - question_89
+  - question_90
+  - question_91
+  - question_92
+  - question_93
+  - question_94
+  - question_95
+  - question_96
+  - question_97
+  - question_98
+  - question_99
+  - question_100
+  - question_101
+  - question_102
+  - question_103
+  - question_104
+  - question_105
+  - question_106
+  - question_107
+  - question_108
+  - question_109
+  - question_110
+  - question_111
+  - question_112
+  - question_113
+  - question_114
+  - question_115
+  - question_116
+  - question_117
+  - question_118
+  - question_119
 
 slots:
   #depression-Anxiety
@@ -171,7 +222,106 @@ slots:
     type: unfeaturized
   question_50:
     type: unfeaturized
-
+    # Eating Disorder
+  question_71:
+    type: unfeaturized
+  question_72:
+    type: unfeaturized
+  question_73:
+    type: unfeaturized
+  question_74:
+    type: unfeaturized
+  question_75:
+    type: unfeaturized
+  question_76:
+    type: unfeaturized
+  question_77:
+    type: unfeaturized
+  question_78:
+    type: unfeaturized
+  question_79:
+    type: unfeaturized
+  question_80:
+    type: unfeaturized
+  question_81:
+    type: unfeaturized
+  question_82:
+    type: unfeaturized
+  question_83:
+    type: unfeaturized
+  question_84:
+    type: unfeaturized  
+  question_85:
+    type: unfeaturized
+    # Sleep Disorders    
+  question_86:                       
+    type: unfeaturized
+  question_87:
+    type: unfeaturized
+  question_88:
+    type: unfeaturized
+  question_89:
+    type: unfeaturized
+  question_90:
+    type: unfeaturized  
+  question_91:
+    type: unfeaturized
+  question_92:
+    type: unfeaturized
+  question_93:
+    type: unfeaturized
+  question_94:
+    type: unfeaturized
+  question_95:
+    type: unfeaturized
+  question_96:
+    type: unfeaturized
+  question_97:
+    type: unfeaturized
+  question_98:
+    type: unfeaturized
+  question_99:
+    type: unfeaturized
+  question_100:
+    type: unfeaturized
+  question_101:
+    type: unfeaturized
+  question_102:
+    type: unfeaturized
+  question_103:
+    type: unfeaturized
+  question_104:
+    type: unfeaturized
+  question_105:
+    type: unfeaturized
+  question_106:
+    type: unfeaturized
+  question_107:
+    type: unfeaturized
+  question_108:
+    type: unfeaturized
+  question_109:
+    type: unfeaturized
+  question_110:
+    type: unfeaturized
+  question_111:
+    type: unfeaturized
+  question_112:
+    type: unfeaturized
+  question_113:
+    type: unfeaturized  
+  question_114:
+    type: unfeaturized
+  question_115:
+    type: unfeaturized
+  question_116:
+    type: unfeaturized
+  question_117:
+    type: unfeaturized
+  question_118:
+    type: unfeaturized
+  question_119:
+    type: unfeaturized
 
 responses:
   utter_choice:
@@ -861,11 +1011,648 @@ responses:
             payload: "/several_days{\"question_50\": \"1\"}"
             title: "Yes"
 
+# Eating disorders
+  utter_ask_question_71:
+    -
+      text: "How much more or less do you feel you worry about your weight and body shape than other people your age?"
+      buttons:
+        -
+          payload: "/notatall{\"question_71\": \"0\"}"
+          title: I worry a lot less than other people
+
+        -
+          payload: "/several_days{\"question_71\": \"1\"}"
+          title: I worry about the same as other people
+
+        -
+          payload: "/morethanhalf{\"question_71\": \"2\"}"
+          title: I worry a little more than other people
+
+        -
+          payload: "/everyday{\"question_71\": \"3\"}"
+          title: I worry a lot more than other people
+  utter_ask_question_72:
+    -
+      text: "How afraid are you of gaining 3 pounds?"
+      buttons:
+        -
+          payload: "/notatall{\"question_72\": \"0\"}"
+          title: Not afraid of gaining
+
+        -
+          payload: "/several_days{\"question_72\": \"1\"}"
+          title: Slightly afraid of gaining
+
+        -
+          payload: "/morethanhalf{\"question_72\": \"2\"}"
+          title: Moderately afraid of gaining
+
+        -
+          payload: "/everyday{\"question_72\": \"3\"}"
+          title: Terrified of gaining
+  utter_ask_question_73:
+    -
+      text: "When was the last time you went on a diet?"
+      buttons:
+        -
+          payload: "/notatall{\"question_73\": \"0\"}"
+          title: I have never been on a diet
+
+        -
+          payload: "/several_days{\"question_73\": \"1\"}"
+          title: I was on a diet about one year ago
+
+        -
+          payload: "/morethanhalf{\"question_73\": \"2\"}"
+          title: I was on a diet about 1 months ago
+
+        -
+          payload: "/everyday{\"question_73\": \"3\"}"
+          title: I'm on a diet now
+  utter_ask_question_74:
+    -
+      text: "Compared to other things in your life, how important is your weight to you?"
+      buttons:
+        -
+          payload: "/notatall{\"question_74\": \"0\"}"
+          title: My weight is not important compared to other things in my life
+
+        -
+          payload: "/several_days{\"question_74\": \"1\"}"
+          title: My weight is a little more important than some other things in my life
+
+        -
+          payload: "/morethanhalf{\"question_74\": \"2\"}"
+          title: My weight is more important than most, but not all, things in my life
+
+        -
+          payload: "/everyday{\"question_74\": \"3\"}"
+          title: My weight is the most important thing in my life
+  utter_ask_question_75:
+    -
+      text: "Do you ever feel fat?"
+      buttons:
+        -
+          payload: "/notatall{\"question_75\": \"0\"}"
+          title: Never
+
+        -
+          payload: "/several_days{\"question_75\": \"1\"}"
+          title: Sometimes
+
+        -
+          payload: "/morethanhalf{\"question_75\": \"2\"}"
+          title: Often
+
+        -
+          payload: "/everyday{\"question_75\": \"3\"}"
+          title: Always
+  utter_ask_question_76:
+    -
+      text: "In the past 3 months, how many times have you had a sense of loss of control AND you also ate what most people would regard as an unusually large amount of food at one time, defined as definitely more than most people would eat under similar circumstances ?"
+      buttons:
+        -
+          payload: "/notatall{\"question_76\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_76\": \"1\"}"
+          title: Few times
+
+        -
+          payload: "/morethanhalf{\"question_76\": \"2\"}"
+          title: More than few times
+
+        -
+          payload: "/everyday{\"question_76\": \"3\"}"
+          title: Many times
+  utter_ask_question_77:
+    -
+      text: "In the past 3 months, how many times have you done any of the following as a means to control your weight and shape: Made yourself throw up?"
+      buttons:
+        -
+          payload: "/notatall{\"question_77\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_77\": \"1\"}"
+          title: Few times
+
+        -
+          payload: "/morethanhalf{\"question_77\": \"2\"}"
+          title: More than few times
+
+        -
+          payload: "/everyday{\"question_77\": \"3\"}"
+          title: Many times
+  utter_ask_question_78:
+    -
+      text: "In the past 3 months, how many times have you done any of the following as a means to control your weight and shape: Used diuretics or laxatives?"
+      buttons:
+        -
+          payload: "/notatall{\"question_78\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_78\": \"1\"}"
+          title: Few times
+
+        -
+          payload: "/morethanhalf{\"question_78\": \"2\"}"
+          title: More than few times
+
+        -
+          payload: "/everyday{\"question_78\": \"3\"}"
+          title: Many times
+  utter_ask_question_79:
+    -
+      text: "Exercised excessively?(i.e. pushed yourself very hard; had to stick to a specific exercise schedule no matter what—for example even when you were sick/injured or if it meant missing a class or other important obligation; felt compelled to exercise)"
+      buttons:
+        -
+          payload: "/notatall{\"question_79\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_79\": \"1\"}"
+          title: Few times
+
+        -
+          payload: "/morethanhalf{\"question_79\": \"2\"}"
+          title: More than few times
+
+        -
+          payload: "/everyday{\"question_79\": \"3\"}"
+          title: Many times
+  utter_ask_question_80:
+    -
+      text: "Fasted? (i.e. intentionally not eaten anything at all for at least 24 hours in an attempt to prevent weight gain (e.g., that is feared as a result of binge eating) or to lose weight)"
+      buttons:
+        -
+          payload: "/notatall{\"question_80\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_80\": \"1\"}"
+          title: Few times
+
+        -
+          payload: "/morethanhalf{\"question_80\": \"2\"}"
+          title: More than few times
+
+        -
+          payload: "/everyday{\"question_80\": \"3\"}"
+          title: Many times
+  utter_ask_question_81:
+    -
+      text: "Do you consume a small amount of food (i.e., less than 1200 calories/day) on a regular basis to influence your shape or weight?"
+      buttons:
+        -
+          payload: "/notatall{\"question_81\": \"0\"}"
+          title: Not At All
+
+        -
+          payload: "/several_days{\"question_81\": \"1\"}"
+          title: Several Days
+
+        -
+          payload: "/morethanhalf{\"question_81\": \"2\"}"
+          title: More than half of the Days
+
+        -
+          payload: "/everyday{\"question_81\": \"3\"}"
+          title: Nearly every day
+  utter_ask_question_82:
+    -
+      text: "Are you currently in treatment for an eating disorder?"
+      buttons:
+        -
+          payload: "/notatall{\"question_82\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_82\": \"1\"}"
+          title: "Not currently, but I have been in the past"
+
+        -
+          payload: "/morethanhalf{\"question_82\": \"2\"}"
+          title: "Yes"
+  utter_ask_question_83:
+    -
+      text: "Do you struggle with a lack of interest in eating or food AND has this led to major problems for you (e.g., significant weight loss and/or nutritional problems; major impairment in functioning)?"
+      buttons:
+        -
+          payload: "/notatall{\"question_83\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/everyday{\"question_83\": \"3\"}"
+          title: "Yes"
+  utter_ask_question_84:
+    -
+      text: "Do you avoid many foods because of such features as texture, consistency, temperature, or smell, AND has this led to major problems for you (e.g., significant weight loss and/or nutritional problems; major impairment in functioning)?"
+      buttons:
+        -
+          payload: "/notatall{\"question_84\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/everyday{\"question_84\": \"3\"}"
+          title: "Yes"
+  utter_ask_question_85:
+    -
+      text: "Do you avoid certain or many foods, not for a medical reason such as gluten sensitivity, but because of fear of experiencing negative consequences like choking or vomiting AND has this led to major problems for you (e.g., significant weight loss, significant nutritional problems; major impairment in functioning)?"
+      buttons:
+        -
+          payload: "/notatall{\"question_85\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/everyday{\"question_85\": \"3\"}"
+          title: "Yes"
+
+# Sleep disorders
+  utter_ask_question_86:
+      -
+        text: "You have been told that I snore."
+        buttons:
+          -
+            payload: "/notatall{\"question_86\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_86\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_87:
+      -
+        text: "I have been told that I stop breathing when I sleep."
+        buttons:
+          -
+            payload: "/notatall{\"question_87\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_87\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_88:
+      -
+        text: "I have high blood pressure."
+        buttons:
+          -
+            payload: "/notatall{\"question_88\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_88\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_89:
+      -
+        text: "My friends and family say that I’m grumpy and irritable. "
+        buttons:
+          -
+            payload: "/notatall{\"question_89\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_89\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_90:
+      -
+        text: "I have fallen asleep while driving."
+        buttons:
+          -
+            payload: "/notatall{\"question_90\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_90\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_91:
+      -
+        text: "I have noticed my heart pounding or beating irregularly during the night."
+        buttons:
+          -
+            payload: "/notatall{\"question_91\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_91\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_92:
+    -
+      text: "I get morning headaches."
+      buttons:
+        -
+          payload: "/notatall{\"question_92\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_92\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_93:
+      -
+        text: "I suddenly wake gasping for breath."
+        buttons:
+          -
+            payload: "/notatall{\"question_93\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_93\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_94:
+      -
+        text: "I am overweight."
+        buttons:
+          -
+            payload: "/notatall{\"question_94\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_94\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_95:
+      -
+        text: "I seem to be losing my sex drive."
+        buttons:
+          -
+            payload: "/notatall{\"question_95\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_95\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_96:
+      -
+        text: "I often feel sleepy and struggle to remain alert."
+        buttons:
+          -
+            payload: "/notatall{\"question_96\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_96\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_97:
+      -
+        text: "I frequently wake with a dry mouth."
+        buttons:
+          -
+            payload: "/notatall{\"question_97\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_97\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_98:
+      -
+        text: "I have difficulty falling asleep."
+        buttons:
+          -
+            payload: "/notatall{\"question_98\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_98\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_99:
+      -
+        text: "Thoughts race through my mind and prevent me from sleeping."
+        buttons:
+          -
+            payload: "/notatall{\"question_99\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_99\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_100:
+      -
+        text: "I anticipate a problem with sleep several times a week."
+        buttons:
+          -
+            payload: "/notatall{\"question_100\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_100\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_101:
+      -
+        text: "I wake up and cannot go back to sleep."
+        buttons:
+          -
+            payload: "/notatall{\"question_101\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_101\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_102:
+    -
+      text: "I worry about things and have trouble relaxing. "
+      buttons:
+        -
+          payload: "/notatall{\"question_102\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_102\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_103:
+    -
+      text: "I wake up earlier in the morning than I would like to."
+      buttons:
+        -
+          payload: "/notatall{\"question_103\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_103\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_104:
+      -
+        text: "I lie awake for half an hour or more before I fall asleep. "
+        buttons:
+          -
+            payload: "/notatall{\"question_104\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_104\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_105:
+      -
+        text: "When I am angry or surprised, I feel like my muscles go limp. "
+        buttons:
+          -
+            payload: "/notatall{\"question_105\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_105\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_106:
+      -
+        text: "I often feel like I am in a daze."
+        buttons:
+          -
+            payload: "/notatall{\"question_106\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_106\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_107:
+      -
+        text: "I have experienced vivid dreamlike scenes."
+        buttons:
+          -
+            payload: "/notatall{\"question_107\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_107\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_108:
+      -
+        text: "I have fallen asleep in social settings such as the movies or at a party. "
+        buttons:
+          -
+            payload: "/notatall{\"question_108\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_108\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_109:
+      -
+        text: "I have trouble at work because of sleepiness."
+        buttons:
+          -
+            payload: "/notatall{\"question_109\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_109\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_110:
+      -
+        text: "I have dreams soon after falling asleep or during naps."
+        buttons:
+          -
+            payload: "/notatall{\"question_110\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_110\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_111:
+      -
+        text: "I have “sleep attacks” during the day no matter how hard I try to stay awake."
+        buttons:
+          -
+            payload: "/notatall{\"question_111\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_111\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_112:
+    -
+      text: "I have had episodes of feeling paralyzed during my sleep or on awakening."
+      buttons:
+        -
+          payload: "/notatall{\"question_112\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_112\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_113:
+    -
+      text: "Other than when exercising, I still experience muscle tension in my legs."
+      buttons:
+        -
+          payload: "/notatall{\"question_113\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_113\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_114:
+      -
+        text: "I have noticed (or others have commented) that parts of my body jerk during sleep."
+        buttons:
+          -
+            payload: "/notatall{\"question_114\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_114\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_115:
+      -
+        text: "I have been told I kick at night."
+        buttons:
+          -
+            payload: "/notatall{\"question_115\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_115\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_116:
+      -
+        text: "When trying to go to sleep, I experience an Aching or crawling sensation in my legs. "
+        buttons:
+          -
+            payload: "/notatall{\"question_116\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_116\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_117:
+      -
+        text: "I experience leg pain and cramps at night."
+        buttons:
+          -
+            payload: "/notatall{\"question_117\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_117\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_118:
+      -
+        text: "Sometimes I can’t keep my legs still at night. I just have to move them to feel comfortable."
+        buttons:
+          -
+            payload: "/notatall{\"question_118\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_118\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_119:
+      -
+        text: "Even though I slept during the night, I feel sleepy during the day."
+        buttons:
+          -
+            payload: "/notatall{\"question_119\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_119\": \"1\"}"
+            title: "Yes"
+  
 
 forms:
   - depression_form
   - trauma_form
   - drug_form
+  - sleep_form
+  - eat_form
 
 
 session_config:

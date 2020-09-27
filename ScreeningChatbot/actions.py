@@ -205,3 +205,185 @@ class DrugForm(FormAction):
             message = "You possess high traits of drug addiction. You should see a psychologist or counsellor on immediate basis.  Caution: These results are not to be trusted fully.."
             dispatcher.utter_message(message)
         return [AllSlotsReset()]
+
+class EatForm(FormAction):
+
+
+    def name(self):
+         return "eat_form"
+    @staticmethod
+    def required_slots(tracker):
+        return [
+            "question_71",
+            "question_72",
+            "question_73",
+            "question_74",
+            "question_75",
+            "question_76",
+            "question_77",
+            "question_78",
+            "question_79",
+            "question_80",
+            "question_81",
+            "question_82",
+            "question_83",
+            "question_84",
+            "question_85"   
+            ]
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        
+        question_71  = int(tracker.get_slot("question_71"))
+        question_72 =  int(tracker.get_slot("question_72"))
+        question_73  = int(tracker.get_slot("question_73"))
+        question_74  = int(tracker.get_slot("question_74"))
+        question_75  = int(tracker.get_slot("question_75"))
+        question_76  = int(tracker.get_slot("question_76"))
+        question_77  = int(tracker.get_slot("question_77"))
+        question_78  = int(tracker.get_slot("question_78"))
+        question_79  = int(tracker.get_slot("question_79"))
+        question_80  = int(tracker.get_slot("question_80"))
+        question_81  = int(tracker.get_slot("question_81"))
+        question_82  = int(tracker.get_slot("question_82"))
+        question_83  = int(tracker.get_slot("question_83"))
+        question_84  = int(tracker.get_slot("question_84"))
+        question_85  = int(tracker.get_slot("question_85"))
+        
+        sum9 = question_71+ question_72+ question_73+ question_74+ question_75+ question_76+ question_77+ question_78+ question_79+ question_80+ question_81+ question_82+ question_83+ question_84+ question_85  
+        sum9 = int(sum9)
+        if(sum9 < 16):
+            message = "You do not possess traits of eating disorder. Although if you continue facing the problems kindly visit a doctor. Caution: These results are not to be trusted fully."
+            dispatcher.utter_message(message)
+        elif(sum9 >= 16 and sum9 < 30):
+            message = "You do possess moderate traits of eating disorder. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully."
+            dispatcher.utter_message(message)
+        elif(sum9 >= 30):
+            message = "You possess high traits of eating disorder. You should see a psychologist or counsellor on immediate basis.  Caution: These results are not to be trusted fully."
+            dispatcher.utter_message(message)
+        return [AllSlotsReset()]
+
+class SleepForm(FormAction):
+
+
+    def name(self):
+         return "sleep_form"
+    @staticmethod
+    def required_slots(tracker):
+        return [
+            "question_86",
+            "question_87",
+            "question_88",
+            "question_89",
+            "question_90",
+            "question_91",
+            "question_92",
+            "question_93",
+            "question_94",
+            "question_95",
+            "question_96",
+            "question_97",
+            "question_98",
+            "question_99",
+            "question_100",
+            "question_101",
+            "question_102",
+            "question_103",
+            "question_104",
+            "question_105",
+            "question_106",
+            "question_107",
+            "question_108",
+            "question_109",
+            "question_110",
+            "question_111",
+            "question_112",
+            "question_113",
+            "question_114",
+            "question_115",
+            "question_116",
+            "question_117",
+            "question_118",
+            "question_119"
+            ]
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        
+        question_86   = int(tracker.get_slot("question_86"))
+        question_87   = int(tracker.get_slot("question_87"))
+        question_88   = int(tracker.get_slot("question_88"))
+        question_89   = int(tracker.get_slot("question_89"))
+        question_90   = int(tracker.get_slot("question_90"))
+        question_91   = int(tracker.get_slot("question_91"))
+        question_92   = int(tracker.get_slot("question_92"))
+        question_93   = int(tracker.get_slot("question_93"))
+        question_94   = int(tracker.get_slot("question_94"))
+        question_95   = int(tracker.get_slot("question_95"))
+        question_96   = int(tracker.get_slot("question_96"))
+        question_97   = int(tracker.get_slot("question_97"))
+        
+        question_98   = int(tracker.get_slot("question_98"))
+        question_99   = int(tracker.get_slot("question_99"))
+        question_100  = int(tracker.get_slot("question_100"))
+        question_101  = int(tracker.get_slot("question_101"))
+        question_102  = int(tracker.get_slot("question_102"))
+        question_103  = int(tracker.get_slot("question_103"))
+        question_104  = int(tracker.get_slot("question_104"))
+        
+        question_105  = int(tracker.get_slot("question_105"))
+        question_106  = int(tracker.get_slot("question_106"))
+        question_107  = int(tracker.get_slot("question_107"))
+        question_108  = int(tracker.get_slot("question_108"))
+        question_109  = int(tracker.get_slot("question_109"))
+        question_110  = int(tracker.get_slot("question_110"))
+        question_111  = int(tracker.get_slot("question_111"))
+        question_112  = int(tracker.get_slot("question_112"))
+        
+        question_113  = int(tracker.get_slot("question_113"))
+        question_114  = int(tracker.get_slot("question_114"))
+        question_115  = int(tracker.get_slot("question_115"))
+        question_116  = int(tracker.get_slot("question_116"))
+        question_117  = int(tracker.get_slot("question_117"))
+        question_118  = int(tracker.get_slot("question_118"))
+        question_119  = int(tracker.get_slot("question_119"))
+        
+        sum3 = question_86+ question_87+ question_88+ question_89+ question_90+ question_91+ question_92+ question_93+ question_94+ question_95+ question_96+ question_97 
+        sum4 = question_98+ question_99+ question_100+ question_101+ question_102+ question_103+ question_104 
+        sum5 = question_105+ question_106+ question_107+ question_108+ question_109+ question_110+ question_111+ question_112
+        sum6 = + question_113+ + question_114+ question_115+ question_116+ question_117+ question_118+ question_119
+        sum3 = int(sum3)
+        sum4 = int(sum4)
+        sum5 = int(sum5)
+        sum6 = int(sum6)
+        sum7 = sum3+sum4+sum5+sum6
+        if(sum3 > 3):
+            message = "You do possess traits of sleep apnea. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        if(sum4 > 3):
+            message = "You do possess traits of insomnia. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        if(sum5 > 3):
+            message = "You possess traits of narcolepsy. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        if(sum6 > 3):
+            message = "You possess traits of restless leg syndrome. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        elif(sum7 < 10):
+            message = "You do not possess traits of sleeping disorders. Although if you continue facing the problems kindly visit a doctor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        elif(sum7 > 10):
+            message = "You do possess traits of sleeping disorders. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+
+
+        return [AllSlotsReset()]
+
