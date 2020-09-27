@@ -1,9 +1,9 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]](https://github.com/aadimangla/PsyHealth/issues)
+[![Issues][issues-shield]](https://github.com/aadimangla/PsyHealth-Open-Dil-Hackathon/issues)
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -26,7 +26,7 @@
     ·
     <a href="">Report Bug</a>
     · -->
-    <a href="https://github.com/aadimangla/PsyHealth/issues">Request Feature</a>
+    <a href="https://github.com/aadimangla/PsyHealth-Open-Dil-Hackathon/issues">Request Feature</a>
   </p>
 </p>
 
@@ -39,9 +39,7 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Installation](#Installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
+  * [How to Run](#how-to-run)
 * [Contributors](#contributors)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
@@ -53,20 +51,24 @@
 
 [![Product Name Screen Shot][product-screenshot]](images/product.png)
 
-Describe the project
-Here's why:
-*
+To the outside world, our lives may look perfect. But in reality, there is always a constant mental struggle, swarming thoughts keeping us awake all night. We are all on the continuum rather than being ill or well. Our genetic make-up, life circumstances affect our being. The aim of our team is to help people surpass these constrictions and move people up the ladder so that they can reach their full potential and lead productive lives. This is our website and why we believe strongly in our mission.As a patient or someone seeking help, we have you all covered.
+
+We offer services like Booking an Appointment, Doctor-Patient Confidentiality, Interacting with our chatbot and Interactive Sessions.There is a simple form which you will have to fill which is not a time-consuming process at all and click book appointment. All necessary details will be emailed to you. Our highlights involve video calling which we facilitate to get in touch with the doctor within the comforts of your home. Let's explore the login options for the doctor.
+
+The doctor can log in with their email id and password or signup in case they do not have an account. Upon successful login, the doctors can view their appointments. In case of any dilemma regarding consulting the doctors, we have you all covered. You can take help of our layered chatbot just answer simple questions to find out the need for consultation. We cover Anxiety and depression, Trauma, Drugs, Sleep, Eating and OCD. Once you answer these simple questions using our chatbot you will find out the urgency of your situation. We understand that the world is facing a global pandemic and times are tough. We believe that mind is our greatest asset. A healthy mind A healthy life.
 
 ---
 ### Built With
 This project is build using following frameworks, libraries and softwares.
 * [RASA](https://rasa.com/)
 * [Spacy](https://spacy.io/)
-* [NLTK](https://www.nltk.org/)
 * [Node.js](https://nodejs.org/en/)
 
 ---
+## Project Demo
+![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
 
+---
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -75,29 +77,30 @@ To run this project you need to follow the following steps.
 ### Prerequisites
 
 These are the prerequisites you need to build this bot as well as run it.
+* [Node.js](https://nodejs.org/en/)
+* [RASA](https://rasa.com/)
 
+### How to run
+ 
+#### To run Web app
 ```sh
-$ pip3 install  rasa==1.10.8
-
+$ node app
+```
+#### To run Rasa Server
+* Go to the ScreeningChatbot folder and open two terminals and run the following commands
+* Terminal 1 
+```sh
+$ rasa run actions
+```
+* Terminal 2
+```sh
+$ rasa run -m models --enable-api --cors "*" --debug
 ```
 
-### Installation
- 
- Write about installation
-
----
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Why this project is needed
 ---
 
-<!-- ROADMAP -->
-## Roadmap
 
-See the [open issues](https://github.com/aadimangla/PsyHealth/issues) for a list of proposed features (and known issues).
 
----
 
 <!-- CONTRIBUTING -->
 ## Contributors
@@ -128,11 +131,6 @@ See the [open issues](https://github.com/aadimangla/PsyHealth/issues) for a list
 - Copyright 2020
 
 
----
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* Acknowledgements if any
 
 
 
@@ -140,16 +138,14 @@ See the [open issues](https://github.com/aadimangla/PsyHealth/issues) for a list
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/aadimangla/PsyHealth.svg?style=flat-square
-[contributors-url]: https://github.com/aadimangla/PsyHealth/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/aadimangla/PsyHealth.svg?style=flat-square
-[forks-url]: https://github.com/aadimangla/PsyHealth/network/members
-[stars-shield]: https://img.shields.io/github/stars/aadimangla/PsyHealth.svg?style=flat-square
-[stars-url]: https://github.com/aadimangla/PsyHealth/stargazers
-[issues-shield]: https://img.shields.io/github/issues/aadimangla/PsyHealth.svg?style=flat-square
-[issues-url]: https://github.com/aadimangla/PsyHealth/issues
-[license-shield]: https://img.shields.io/github/license/aadimangla/PsyHealth.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/aadimangla/PsyHealth-Open-Dil-Hackathon.svg?style=flat-square
+[contributors-url]: https://github.com/aadimangla/PsyHealth-Open-Dil-Hackathon/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/aadimangla/PsyHealth-Open-Dil-Hackathon.svg?style=flat-square
+[forks-url]: https://github.com/aadimangla/PsyHealth-Open-Dil-Hackathon/network/members
+[stars-shield]: https://img.shields.io/github/stars/aadimangla/PsyHealth-Open-Dil-Hackathon.svg?style=flat-square
+[stars-url]: https://github.com/aadimangla/PsyHealth-Open-Dil-Hackathon/stargazers
+[issues-shield]: https://img.shields.io/github/issues/aadimangla/PsyHealth-Open-Dil-Hackathon.svg?style=flat-square
+[issues-url]: https://github.com/aadimangla/PsyHealth-Open-Dil-Hackathon/issues
+[license-shield]: https://img.shields.io/github/license/aadimangla/PsyHealth-Open-Dil-Hackathon.svg?style=flat-square
 [license-url]: https://github.com/aadimangla/PsyHealth/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/aadimangla
 [product-screenshot]: images/screenshot.png

@@ -1341,3 +1341,75 @@ border-radius: 5px;
 
 
 /**************** FOOTER PART ENDS ****************/
+
+/****************** APPOINTMENT STARTS ****************/
+.appointment img{
+
+  height: 100%;
+  width: 100%;
+}
+.appointment form{
+  padding: 15%;
+}
+.appointment .form-check-input{
+  margin-left: 0;
+}
+/****************** APPOINTMENT ENDS ****************/
+
+/****************** DASHBOARD STARTS ****************/
+
+.dashboard .dashboard_bg {
+  background-image: url(../img/about_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-bottom : 5%
+}
+
+.dashboard .dashboard_content {
+  margin: 15% 0 15%;
+}
+
+.dashboard_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dashboard .dashboard_content h1{
+  letter-spacing: 2px;
+  font-size: 6em;
+  font-weight: 400;
+}
+
+.dashboard .dashboard_content h3 {
+  letter-spacing: 1.5px;
+  font-size: 2.5em;
+  font-weight: 200;
+  float: right;
+}
+
+.dashboard .dashboard_content p {
+  float: right;;
+}
+
+.dashboard h1{
+  font-size:2em;
+  font-weight: 400;
+  margin-bottom : 35px;
+}
+
+.dashboard .detail_table{
+  margin-bottom: 10%
+}
+
+.dashboard .detail_table table {
+  overflow-x: scroll;
+}
+
+/****************** DASHBOARD ENDS ****************/

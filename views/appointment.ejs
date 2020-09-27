@@ -1,0 +1,105 @@
+<%- include("Partials/header.ejs")  %>
+<section class="appointment">
+<div class="container">
+    <div class="row align-items-center"> 
+        <div class="col-12 col-sm-7">
+<form method="POST" onsubmit="return thankYou()">
+    <div class="form-group row">
+      <label for="patientname" class="col-sm-2 col-form-label">Name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="patientname" name="patientname" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="patientemail" class="col-sm-2 col-form-label">E-mail</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="patientemail" name="patientemail" required>
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="patientno" class="col-sm-2 col-form-label">Phone Number</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="patientno" name="patientno" placeholder="(Optional)">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="patientailment" class="col-sm-2 col-form-label">Ailment</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="patientailment" name="patientailment" placeholder="(Optional)"></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="patientdate" class="col-sm-2 col-form-label">Date</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="patientdate" name="patientdate" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="patienttime" class="col-sm-2 col-form-label">Time</label>
+        <div class="col-sm-10">
+          <input type="time" class ="form-control"id="patienttime" name="patienttime" required>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="patientdoctor" class="col-sm-2 col-form-label">Doctor</label>
+        <div class="col-sm-10">
+          <select name="patientdoctor" id="patientdoctor" > 
+           
+            <% for (var i = 0; i<keys.length; i++){%>
+              <% var key = keys[i]%>
+              <option><%=data[key].name%></option>
+            <%}%>
+            
+          </select>
+        </div>
+      </div>
+    
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Book Appointment</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="col-12 col-sm-5 d-flex justify-content-center">
+    <img src="/img/appointment.jpeg">
+</div>
+    </div>
+</div>
+</section>
+    <%- include("Partials/footer.ejs")  %> 
+
+    <script>
+     
+
+      function thankYou () {
+        
+        var meetingurl = "https://us04web.zoom.us/j/73799621619?pwd=QlJEU0tKK1RuRXhVS3lvYjRuRTA3UT09"
+        var meetingpass = "Psy-Health"
+        var timing = document.getElementById("patienttime").value
+        var day = document.getElementById("patientdate").value
+        var email = document.getElementById("patientemail").value
+       
+        var day = document.getElementById("patientdate").value
+        var mailSubject = "Appointment Details";
+        var mailBody = "Your Appointment is scheduled on "+day+" at "+timing+". Kindly use the mentioned link. "+meetingurl;
+        swal("Thank You!", "Your appointment link is https://us04web.zoom.us/j/73799621619?pwd=QlJEU0tKK1RuRXhVS3lvYjRuRTA3UT09. We have sent your appointment details to your e-mail.", "success")
+          setTimeout(function(){
+            window.location.href = "/";
+          },5000)
+          Email.send({
+            
+    SecureToken : "960572bc-f94b-49e8-84c2-952feb2132a2",     
+    To : email,
+    From : "psyhealth27@gmail.com",
+    Subject : mailSubject,
+    Body : mailBody
+})
+ 
+
+          return true
+      } 
+      
+      
+    </script>
