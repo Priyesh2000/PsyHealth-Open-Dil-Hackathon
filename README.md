@@ -10,11 +10,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<!--   <a href="">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a> -->
+  <a href="">
+    <img src="public/img/logo.jpg" alt="Logo" width="80%" height="80%">
+  </a> 
 
-  <h3 align="center">PsyHealth</h3>
+  <h1 align="center">PsyHealth</h1>
 
   <p align="center">
     <!-- An awesome README template to jumpstart your projects! -->
@@ -42,7 +42,6 @@
   * [How to Run](#how-to-run)
 * [Contributors](#contributors)
 * [License](#license)
-* [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -84,6 +83,8 @@ These are the prerequisites you need to build this bot as well as run it.
  
 #### To run Web app
 ```sh
+$ npm init
+$ npm install
 $ node app
 ```
 #### To run Rasa Server
@@ -105,15 +106,12 @@ $ rasa run -m models --enable-api --cors "*" --debug
 <!-- CONTRIBUTING -->
 ## Contributors
 
-| <a href="linkedin link" target="_blank">**Adarsh**</a> | <a href="linkedin link" target="_blank">**Aditya**</a> | <a href="linkedin link" target="_blank">**Krettika**</a> |
+| <a href="https://www.linkedin.com/in/adarshagarwal198" target="_blank">**Adarsh Agarwal**</a> | <a href="https://www.linkedin.com/in/aadimangla/" target="_blank">**Aditya Mangla**</a> | <a href="https://www.linkedin.com/in/krettika-varshney/" target="_blank">**Krettika Varshney**</a> |
 | :---: |:---:| :---:|
-|[![Adarsh](image link)](github link)| [![Aditya](image link)](https://github.com/aadimangla)|[![Krettika](image link)](github link)|
-| <a href="linkedin link" target="_blank">**Priyesh**</a> | <a href="linkedin link" target="_blank">**Prachi**</a> | <a href="linkedin link" target="_blank">**Video editor**</a> |
-| :---: |:---:| :---:|
-| [![Priyesh](image link)](github link)    | [![Chi chi](image link)](github link) | [![Video editor](image link)](github link)  |
+|[![Adarsh](public/img/Adarsh.jpg)](https://github.com/AdarshAgrwal )| [![Aditya](public/img/Aditya.jpeg)](https://github.com/aadimangla)|[![Krettika](public/img/Krettika.jpeg)](https://github.com/Krettika)|
+| <a href="https://www.linkedin.com/in/priyesh-sharan-b54490180" target="_blank">**Priyesh Sharan**</a> | <a href="https://www.linkedin.com/in/prachi-shrivastava/" target="_blank">**Prachi Shrivastava**</a> | <a href="https://www.linkedin.com/in/vivek-kumarsingh/" target="_blank">**Vivek Kumar Singh**</a> |
+| [![Priyesh](public/img/Priyesh.jpeg)](https://github.com/Priyesh2000)    | <img src="public/img/Prachi.jpeg" alt="Logo" width="100%" height="25%"> | [![Vivek](public/img/vivek.jpeg)](https://github.com/fazenecture)  |
 
-- You can just grab their GitHub profile image URL
-- You should probably resize their picture using `?s=200` at the end of the image URL.
 
 ---
 
