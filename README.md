@@ -48,7 +48,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/product.png)
+<img src="Screenshots/WhatsApp Image 2020-09-27 at 4.08.36 PM.jpeg" alt="Logo" width="80%" height="80%">
+<img src="Screenshots/WhatsApp Image 2020-09-27 at 4.14.15 PM.jpeg" alt="Logo" width="80%" height="80%">
+<img src="Screenshots/WhatsApp Image 2020-09-27 at 4.15.13 PM.jpeg" alt="Logo" width="80%" height="80%">
+
+
 
 To the outside world, our lives may look perfect. But in reality, there is always a constant mental struggle, swarming thoughts keeping us awake all night. We are all on the continuum rather than being ill or well. Our genetic make-up, life circumstances affect our being. The aim of our team is to help people surpass these constrictions and move people up the ladder so that they can reach their full potential and lead productive lives. This is our website and why we believe strongly in our mission.As a patient or someone seeking help, we have you all covered.
 
@@ -65,7 +69,9 @@ This project is build using following frameworks, libraries and softwares.
 
 ---
 ## Project Demo
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
+<a href="https://youtu.be/QL80OAeEErA">
+    Youtube Video Link
+  </a> 
 
 ---
 <!-- GETTING STARTED -->
