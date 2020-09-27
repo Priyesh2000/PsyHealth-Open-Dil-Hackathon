@@ -50,7 +50,7 @@
 
 <img src="Screenshots/WhatsApp Image 2020-09-27 at 4.08.36 PM.jpeg" alt="Logo" width="80%" height="80%">
 <img src="Screenshots/WhatsApp Image 2020-09-27 at 4.14.15 PM.jpeg" alt="Logo" width="80%" height="80%">
-<img src="Screenshots/WhatsApp Image 2020-09-27 at 4.15.13 PM.jpeg" alt="Logo" width="80%" height="80%">
+<img src="IMAGES/CHATBOT.png" alt="Logo" width="80%" height="80%">
 
 
 
