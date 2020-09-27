@@ -40,3 +40,8 @@
 - drugs
 - I want to take drugs screening test
 - Drug addiction
+
+## intent:ocd
+- Obsessive Compulsive Disorder
+- I want to take OCD screening test
+- OCD
