@@ -14,5 +14,13 @@
     "express": "^4.17.1",
     "firebase": "^7.21.1",
     "firebase-admin": "^9.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aadimangla/PsyHealth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aadimangla/PsyHealth/issues"
+  },
+  "homepage": "https://github.com/aadimangla/PsyHealth#readme"
 }
