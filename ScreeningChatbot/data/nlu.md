@@ -35,3 +35,8 @@
 - trauma
 - I want to take trauma screening test
 - Traumatic event
+
+## intent:drugs
+- drugs
+- I want to take drugs screening test
+- Drug addiction

@@ -118,3 +118,90 @@ class TraumaForm(FormAction):
             message = "You possess high traits of trauma. You should see a psychologist or counsellor on immediate basis.  Caution: These results are not to be trusted fully.."
             dispatcher.utter_message(message)
         return [AllSlotsReset()]
+
+class DrugForm(FormAction):
+
+
+    def name(self):
+         return "drug_form"
+    @staticmethod
+    def required_slots(tracker):
+        return [
+            "question_23",
+            "question_24",
+            "question_25",
+            "question_26",
+            "question_27",
+            "question_28",
+            "question_29",
+            "question_30",
+            "question_31",
+            "question_32",
+            "question_33",
+            "question_34",
+            "question_35",
+            "question_36",
+            "question_37",
+            "question_38",
+            "question_39",
+            "question_40",
+            "question_41",
+            "question_42",
+            "question_43",
+            "question_44",
+            "question_45",
+            "question_46",
+            "question_47",
+            "question_48",
+            "question_49",
+            "question_50"
+            ]
+
+    def submit(
+        self,
+        dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any],
+    ) -> List[Dict]:
+        
+        question_23  = int(tracker.get_slot("question_23"))
+        question_24 =  int(tracker.get_slot("question_24"))
+        question_25  = int(tracker.get_slot("question_25"))
+        question_26  = int(tracker.get_slot("question_26"))
+        question_27  = int(tracker.get_slot("question_27"))
+        question_28  = int(tracker.get_slot("question_28"))
+        question_29  = int(tracker.get_slot("question_29"))
+        question_30  = int(tracker.get_slot("question_30"))
+        question_31  = int(tracker.get_slot("question_31"))
+        question_32  = int(tracker.get_slot("question_32"))
+        question_33  = int(tracker.get_slot("question_33"))
+        question_34 =  int(tracker.get_slot("question_34"))
+        question_35  = int(tracker.get_slot("question_35"))
+        question_36  = int(tracker.get_slot("question_36"))
+        question_37  = int(tracker.get_slot("question_37"))
+        question_38  = int(tracker.get_slot("question_38"))
+        question_39  = int(tracker.get_slot("question_39"))
+        question_40  = int(tracker.get_slot("question_40"))
+        question_41  = int(tracker.get_slot("question_41"))
+        question_42  = int(tracker.get_slot("question_42"))
+        question_43  = int(tracker.get_slot("question_43"))
+        question_44  = int(tracker.get_slot("question_44"))
+        question_45  = int(tracker.get_slot("question_45"))
+        question_46  = int(tracker.get_slot("question_46"))
+        question_47  = int(tracker.get_slot("question_47"))
+        question_48  = int(tracker.get_slot("question_48"))
+        question_49  = int(tracker.get_slot("question_49"))
+        question_50  = int(tracker.get_slot("question_50"))
+        
+        sum2 = question_23+ question_24+ question_25+ question_26+ question_27+ question_28+ question_29+ question_30+ question_31+ question_32+ question_33+ question_34+ question_35+ question_36+ question_37+ question_38+ question_39+ question_40+ question_41+ question_42+ question_43+ question_44+ question_45+ question_46+ question_47+ question_48+ question_49+ question_50
+        sum2 = int(sum2)
+        if(sum2 < 6):
+            message = "You do not possess traits of drug addiction. Although if you continue facing the problems kindly visit a doctor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        elif(sum2 >= 6 and sum2 < 12):
+            message = "You do possess moderate traits of drug addiction. You should see a psychologist or counsellor.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        elif(sum2 >= 12):
+            message = "You possess high traits of drug addiction. You should see a psychologist or counsellor on immediate basis.  Caution: These results are not to be trusted fully.."
+            dispatcher.utter_message(message)
+        return [AllSlotsReset()]

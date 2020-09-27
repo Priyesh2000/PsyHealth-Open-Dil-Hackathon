@@ -6,6 +6,7 @@ intents:
   - everyday
   - depression
   - trauma
+  - drugs
 
 entities:
   - option_0
@@ -35,6 +36,34 @@ entities:
   - question_20
   - question_21
   - question_22
+  - question_23
+  - question_24
+  - question_25
+  - question_26
+  - question_27
+  - question_28
+  - question_29
+  - question_30
+  - question_31
+  - question_32
+  - question_33
+  - question_34
+  - question_35
+  - question_36
+  - question_37
+  - question_38
+  - question_39
+  - question_40
+  - question_41
+  - question_42
+  - question_43
+  - question_44
+  - question_45
+  - question_46
+  - question_47
+  - question_48
+  - question_49
+  - question_50
 
 slots:
   #depression-Anxiety
@@ -84,6 +113,63 @@ slots:
   question_21:
     type: unfeaturized
   question_22:
+    type: unfeaturized
+    # Drugs
+  question_23:
+    type: unfeaturized
+  question_24:
+    type: unfeaturized
+  question_25:
+    type: unfeaturized
+  question_26:
+    type: unfeaturized
+  question_27:
+    type: unfeaturized
+  question_28:
+    type: unfeaturized
+  question_29:
+    type: unfeaturized
+  question_30:
+    type: unfeaturized
+  question_31:
+    type: unfeaturized
+  question_32:
+    type: unfeaturized
+  question_33:
+    type: unfeaturized
+  question_34:
+    type: unfeaturized
+  question_35:
+    type: unfeaturized
+  question_36:
+    type: unfeaturized
+  question_37:
+    type: unfeaturized
+  question_38:
+    type: unfeaturized
+  question_39:
+    type: unfeaturized
+  question_40:
+    type: unfeaturized
+  question_41:
+    type: unfeaturized
+  question_42:
+    type: unfeaturized
+  question_43:
+    type: unfeaturized  
+  question_44:
+    type: unfeaturized
+  question_45:
+    type: unfeaturized
+  question_46:
+    type: unfeaturized
+  question_47:
+    type: unfeaturized
+  question_48:
+    type: unfeaturized
+  question_49:
+    type: unfeaturized
+  question_50:
     type: unfeaturized
 
 
@@ -464,10 +550,322 @@ responses:
         -
           payload: "/several_days{\"question_22\": \"1\"}"
           title: "Yes"
+ 
+# Drugs
+  utter_ask_question_23:
+    -
+      text: "Have you used drugs other than those required for medical reasons?"
+      buttons:
+        -
+          payload: "/notatall{\"question_23\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_23\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_24:
+      -
+        text: "Have you abused prescription drugs?"
+        buttons:
+          -
+            payload: "/notatall{\"question_24\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_24\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_25:
+      -
+        text: "Do you abuse more than one drug at a time?"
+        buttons:
+          -
+            payload: "/notatall{\"question_25\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_25\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_26:
+      -
+        text: "Can you get through the week without using drugs(other than those required for medical reasons)?"
+        buttons:
+          -
+            payload: "/notatall{\"question_26\": \"1\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_26\": \"0\"}"
+            title: "Yes"
+  utter_ask_question_27:
+      -
+        text: "Are you always able to stop using drugs when you want to?"
+        buttons:
+          -
+            payload: "/notatall{\"question_27\": \"1\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_27\": \"0\"}"
+            title: "Yes"
+  utter_ask_question_28:
+      -
+        text: "Do you abuse drugs on a continuous basis?"
+        buttons:
+          -
+            payload: "/notatall{\"question_28\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_28\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_29:
+      -
+        text: "Do you try to limit your drug use to certain situations?"
+        buttons:
+          -
+            payload: "/notatall{\"question_29\": \"1\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_29\": \"0\"}"
+            title: "Yes"
+  utter_ask_question_30:
+      -
+        text: "Have you had “blackouts” or “flashbacks” as a result of drug use?"
+        buttons:
+          -
+            payload: "/notatall{\"question_30\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_30\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_31:
+      -
+        text: "Do you ever feel bad about your drug abuse?"
+        buttons:
+          -
+            payload: "/notatall{\"question_31\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_31\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_32:
+    -
+      text: "Does your spouse (or parents) ever complain about your involvement with drugs?"
+      buttons:
+        -
+          payload: "/notatall{\"question_32\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_32\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_33:
+      -
+        text: "Do your friends or relatives know or suspect you abuse drugs?"
+        buttons:
+          -
+            payload: "/notatall{\"question_33\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_33\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_34:
+      -
+        text: "Has drug abuse ever created problems between you and your spouse?"
+        buttons:
+          -
+            payload: "/notatall{\"question_34\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_34\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_35:
+      -
+        text: "Has any family member ever sought help for problems related to your drug use?"
+        buttons:
+          -
+            payload: "/notatall{\"question_35\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_35\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_36:
+      -
+        text: "Have you ever lost friends because of your use of drugs?"
+        buttons:
+          -
+            payload: "/notatall{\"question_36\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_36\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_37:
+      -
+        text: "Have you ever neglected your family or missed work because of your use of drugs?"
+        buttons:
+          -
+            payload: "/notatall{\"question_37\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_37\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_38:
+      -
+        text: "Have you ever been in trouble at work because of drug abuse?"
+        buttons:
+          -
+            payload: "/notatall{\"question_38\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_38\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_39:
+      -
+        text: "Have you ever lost a job because of drug abuse?"
+        buttons:
+          -
+            payload: "/notatall{\"question_39\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_39\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_40:
+      -
+        text: "Have you gotten into fights when under the influence of drugs?"
+        buttons:
+          -
+            payload: "/notatall{\"question_40\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_40\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_41:
+      -
+        text: "Have you ever been arrested because of unusual behavior while under the influence of drugs?"
+        buttons:
+          -
+            payload: "/notatall{\"question_41\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_41\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_42:
+    -
+      text: "Have you ever been arrested for driving while under the influence of drugs?"
+      buttons:
+        -
+          payload: "/notatall{\"question_42\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_42\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_43:
+    -
+      text: "Have you engaged in illegal activities in order to obtain drug?"
+      buttons:
+        -
+          payload: "/notatall{\"question_43\": \"0\"}"
+          title: "No"
+
+        -
+          payload: "/several_days{\"question_43\": \"1\"}"
+          title: "Yes"
+  utter_ask_question_44:
+      -
+        text: "Have you ever been arrested for possession of illegal drugs?"
+        buttons:
+          -
+            payload: "/notatall{\"question_44\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_44\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_45:
+      -
+        text: "Have you ever experienced withdrawal symptoms as a result of heavy drug intake?"
+        buttons:
+          -
+            payload: "/notatall{\"question_45\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_45\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_46:
+      -
+        text: "Have you had medical problems as a result of your drug use (e.g., memory loss, hepatitis, convulsions, bleeding, etc.)? "
+        buttons:
+          -
+            payload: "/notatall{\"question_46\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_46\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_47:
+      -
+        text: "Have you ever gone to anyone for help for a drug problem?"
+        buttons:
+          -
+            payload: "/notatall{\"question_47\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_47\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_48:
+      -
+        text: "Have you ever been in a hospital for medical problems related to your drug use?"
+        buttons:
+          -
+            payload: "/notatall{\"question_48\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_48\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_49:
+      -
+        text: "Have you ever been involved in a treatment program specifically related to drug use?"
+        buttons:
+          -
+            payload: "/notatall{\"question_49\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_49\": \"1\"}"
+            title: "Yes"
+  utter_ask_question_50:
+      -
+        text: "Have you been treated as an outpatient for problems related to drug abuse?"
+        buttons:
+          -
+            payload: "/notatall{\"question_50\": \"0\"}"
+            title: "No"
+
+          -
+            payload: "/several_days{\"question_50\": \"1\"}"
+            title: "Yes"
+
 
 forms:
   - depression_form
   - trauma_form
+  - drug_form
 
 
 session_config:

@@ -16,3 +16,9 @@
   -trauma_form
   -form{"name":"trauma_form"}
   -form{"name":null}
+
+## drug form
+* drugs
+  -drug_form
+  -form{"name":"drug_form"}
+  -form{"name":null}
